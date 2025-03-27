@@ -29,78 +29,48 @@ body {
     padding: 50px;
 }
 
-.paragraph {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
+.contact-form {
+    background: rgb(53, 50, 50);
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
 }
-
-.car-form {
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
 }
-
-/* Form Title */
-h2 {
-    text-align: left;
-    margin-bottom: 20px;
-    color: #faf5f5;
+.form-group {
+    margin-bottom: 10px;
 }
-
-/* Labels */
-label {
+.form-group label {
     display: block;
-    text-align: left;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
-
-/* Select Inputs */
-select {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-top: 5px;
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    justify-content: center;
-    
-
 }
-
-/* Submit Button */
-button {
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+.submit-btn {
+    width: 100%;
     padding: 10px;
-    margin-top: 20px;
+    background: goldenrod;
+    color: black;
     border: none;
-    background-color: #ffcc00;
-    color: #222;
-    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
 }
-
-button:hover {
-    background-color: #d9be53;
-}
-
-.price-container {
-    display: none;
-}
-
-.price-display {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
-    margin-top: 10px;
+.submit-btn:hover {
+    background: rgb(229, 198, 119);
 }
 
 .footer {
