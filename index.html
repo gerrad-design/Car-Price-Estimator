@@ -3,11 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerrad Meitamei</title>
+    <title>PriceMyCar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1><em>Car Price Estimator</em></h1>
-    
+    <header class="header">
+        <nav class="nav-container">
+                <span>
+                    <h1 class="heading">
+                        HOW MUCH IS MY CAR WORTH: Instant car value estimator
+                    </h1>
+                </span>
+                    <span class="company-name">
+                        PriceMyCar
+                      </span>
+        </nav>
+    </header>
+    <div id="main-container">
+        <div id="main">  
+            <P class="paragraph">
+              Drive your dreams at a price that makes sense with us today.
+              Don't be afraid of being over-charged or scammed, we got you covered.
+              At PriceMyCar, we offer an <i class="italic">easy-to-use</i> virtual market to make you dreams come true.
+            </P>
+        </div>
+    </div>
+    <h2>Car Selection Form</h2>
+    <form id="car-form">
+        <!-- Car Brand Selection -->
+        <label for="car-brand">Choose a Car Brand:</label>
+        <select id="car-brand" name="car-brand">
+            <option value="" disabled selected>Select a brand</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Audi">Audi</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Kia">Kia</option>
+            <option value="Tesla">Tesla</option>
+        </select>
+
+        <!-- Car Model Selection -->
+        <label for="car-model">Select a Car Model:</label>
+        <select id="car-model" name="car-model" disabled>
+            <option value="" disabled selected>Select a model</option>
+        </select>
+
+        <!-- Car Color Selection -->
+        <label for="car-color">Select a Car Color:</label>
+        <select id="car-color" name="car-color">
+            <option value="" disabled selected>Select a color</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Gray">Gray</option>
+            <option value="Silver">Silver</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Orange">Orange</option>
+            <option value="Brown">Brown</option>
+        </select>
+
+        <!-- Year of Manufacture -->
+        <label for="car-year">Select Year of Manufacture:</label>
+        <select id="car-year" name="car-year">
+            <option value="" disabled selected>Select year</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="check">Check price</button> 
+    </form>
+    <div class="form-container" id="price-container">
+        <h2>Car Price</h2>
+        <p id="price-display">Price: $0</p>
+        <button onclick="resetForm()">Select Another Car</button>
+    </div>
+        <!--footer section-->   
+        <footer class="footer">
+            <div class="container">
+                <div class="social-links">
+                    <div class="socialicons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                        <div class="footer-col">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="privacy-policy.html">Privacy policy</a> </li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="Contact-us.html">Contacts</a></li>
+                                </ul>
+                            </div>    
+                        </div>   
+            </div>
+            <div class="footerBottom">
+                <p>&#169; 2025 PriceMyCar. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
 </body>
 </html>
